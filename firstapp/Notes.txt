@@ -1,0 +1,193 @@
+============================================
+React JS
+============================================
+- ReactJS is front end technology.
+- React is introduced by facebook.
+- There are two type of React
+i) React Native
+ii)ReactJS
+- React Native is mostly used to develop 'Mobile Applications'.
+- ReactJS is used to develop 'Web Applications'.
+- Current version of ReactJS is 18.2.0
+- It is released in 14th Jun 2022.
+- ReactJS applications can be developed using 'JSX'.
+- JSX stands for 'Javascript XML'.
+- 'Babel' is a tool provided by facebook.
+- this tool is used to convert ES2015+ code toequivalent backward versions Eg ES5.
+- ReactJS simplifies Complex UI with the help of components.
+- Reusable part of a complex UI is called a component.
+- as a React developer we can create more than one components.
+- as a React developer we can reuse the components.
+- as a React developer we can provide communication between components.
+- React applications are faster applications as compared to
+other technologies because of Virtual DOM concept.
+
+- React creates tree structure of html elements.
+- this is called Real DOM.
+- internally exactly two copies of Real DOM created.
+- these are called Virtual DOM 1 and Virtual DOM 2 respectively.
+- on change, VD1 is updated.
+- this VD1 is compared with VD2.
+- if Comparison is failed update RD.
+- simultaneously update VD1 and VD2 also.
+
+
+============================================
+Environmental Setup
+============================================
+1. Download and install nodejs
+https://nodejs.org/en/download
+2. Download and install git
+https://git-scm.com/downloads
+3. Download and install VSCode
+https://code.visualstudio.com/
+4. Install 'yarn' tool
+- yarn tool given by facebook
+- this tool is used to download libraries.
+>npm install -g yarn@latest
+$ sudo npm install -g yarn@latest
+% sudo npm install -g yarn@latest
+->npm -> node packaging manager
+->-g -> global installation
+5. Install 'create-react-app' tool
+- create-react-app tool given by facebook
+- this tool is used to create react applications.
+>npm install -g create-react-app@latest
+$ sudo npm install -g create-react-app@latest
+% sudo npm install -g create-react-app@latest
+6. check react version
+>npm view react version
+
+
+
+======================================================
+Creating first react application
+======================================================
+1. Create a directory(folder)
+Demo -> Drag n drop to VSCode
+2. Create react application
+>create-react-app firstapp
+where create-react-app tool to create react application
+firstapp is the name of react application
+-> enlist naming conventions for creating react applications ?
+3. Execution
+switch to application
+>cd firstapp
+execute
+>yarn start
+OR
+>npm start
+Note:- by default react applications are running on port
+no 3000
+Directory Structure of React Application
+i) node_modules
+- this directory contains all libraries or modules required to execute react
+applications.
+ii)public /favicon.ico
+/logo192.png 192 x 192 px logo
+/logo512.png 512 x 512 px logo
+iii)public /index.html
+- react application starts execution from this file.
+iv)public /manifest.json
+/robots.txt
+- help to develop react native(mobile) applications
+v) src
+- components are kept here
+vi)src /index.js
+/index.css
+- index.js is used to register components
+- index.css is stylsheet for index.js (global styles here)
+vii)src /App.js
+/App.css
+/App.test.js
+- 'App' is the default component (i.e. .js)
+- 'App.css' is the stylesheet for the default component.
+- 'App.test.js' is the unit test case for the default component.
+viii)package.json
+- information about dependencies(downloaded libraries)
+
+
+======================================================
+Component:-
+======================================================
+- Reusable part of a complex UI is called a component.
+- As a react developer we can create more than one component.
+- React applications are component based applications.
+- Components are kept in the 'src' folder.
+- Components are registered in the 'index.js' file.
+Type of Components
+- Functional Components
+- Class Components
+Class Component
+- Simple JSX class can behave like component.
+- Class components are created by extending the Component class.
+- Component class is available in React class.
+- React class is available in the react package.
+- 'render()' is the mandatory lifecycle method in the class component.
+
+
+======================================================
+State:-
+======================================================
+- State is used to store component data.
+- {} used to display dynamic data.
+
+
+==========================================================
+props:-
+==========================================================
+ - props are used to share data between components.
+
+
+==========================================================
+Asynchronous calls
+==========================================================
+ - axios library is used to make asynchronous calls
+Download axios library
+	>yarn add axios@1.3.5 --save
+Api https://bewildered-puce-wear.cyclic.app
+
+
+
+=================================================
+Imports and Exports in ReactJS
+=================================================
+ - As react developer we can export variables,
+   objects, functions, etc
+ - As react developer we import any exported 
+   variables, objects, functions, etc
+   
+Note:-
+ 1. While exporting there must be ONE member as default.
+ 2. While exporting
+			export {member1, member2, member3,...}
+			where member1 is default.
+ 3. If we write the default keyword, then it can be imported with any name.
+
+
+================================================
+Lazy Loading
+================================================
+ - Loading of Component on demand is called as Lazy Loading
+ - Loading time of application reduces.
+ - Performace of Application increses.
+ - Lazy Loading is used at slower internets.
+
+
+Hooks 
+==========================================================
+Hooks
+ - Hook is advanced part in ReactJS.
+ - It allows us to use advanced react
+   fetures without writing a class.
+ - It is having simplicity as good as functional
+   components and fetures as good as class components.
+ - Hooks are introduced in February 2019 v16.8
+ - To work with hooks we must use functional components.
+ - Hooks wont work in class components.
+ - Hooks make code more readable.
+ 
+Rule :- 
+ - Hooks are declared before their use,
+   implies declare at the top.
+ - Hooks are declared inside component.
